@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration>
+    <ambiente_desarrollo></ambiente_desarrollo>
+    <ambiente_homologacion></ambiente_homologacion>
+    <ambiente_testing>http://server.admin.vivi.tur.ar/</ambiente_testing>
+    <browser>Chrome</browser>
+    <driverPath>C:/ChromeDriver/chromedriver.exe</driverPath>
+    <delivery>False</delivery>
+    <imagePath>C:/screenshot</imagePath>
+    <imageRepository>C:/imageRepository</imageRepository>
+    <log4jPath>C:/Users/ntedesco/Documents/Trabajo/FrameworkSectur/framework/src/log4j.xml</log4jPath>
+    <reportPath>C:/Users/ntedesco/Documents/Trabajo/FrameworkSectur/framework/src/main/java/report/JReportAdvancedConfiguration.xml</reportPath>
+    <reportRepository>C:/Report/myReport.pdf</reportRepository>
+    <deliveryPath>C:/Users/ntedesco/Documents/Trabajo/FrameworkSectur/framework/src/main/java/delivery/emailSenderConfiguration.xml</deliveryPath>
+    <pruebaRemota>NO</pruebaRemota>
+    <urlDriver>http://192.168.99.100:4444/wd/hub</urlDriver>
+</configuration>
