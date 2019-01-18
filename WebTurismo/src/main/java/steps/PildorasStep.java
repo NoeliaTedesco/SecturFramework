@@ -9,18 +9,16 @@ import helpers.ExcelHelper;
 import helpers.PageHelper;
 import helpers.StepHelper;
 import helpers.XMLHelper;
-import pages.ChangePasswordPage;
 import pages.HomePage;
-import pages.InvitationPage;
 import pages.LoginPage;
 
-public class GenerateInvitationStep extends BaseStep {
+public class PildorasStep extends BaseStep {
 	
 	public static void Run(String testName) {
 		try {
 			log.Log.startTestCase(testName);
 			Usuario usr = XMLHelper.object.getUsuario();
-			Colecciones inv = ExcelHelper.objectExcel.getColeccion();
+			Colecciones col = ExcelHelper.objectExcel.getColeccion();
 			PageHelper.deleteAllCookies(driver);
 			NavigateToSite(configuration.getambiente_testing());
 			CurrentPage = (new LoginPage().GetInstance(LoginPage.class));
@@ -28,13 +26,17 @@ public class GenerateInvitationStep extends BaseStep {
 			CurrentPage.As(LoginPage.class).loginUsser(usr.getUsser(), usr.getPassword());
 			PageHelper.WaitForPageLoading();
 			CurrentPage = (new HomePage().GetInstance(HomePage.class));
-			CurrentPage.As(HomePage.class).enterInvitationsMenu();
+			CurrentPage.As(HomePage.class).enterToPillSection();
 			PageHelper.WaitForPageLoading();
-			CurrentPage = (new InvitationPage().GetInstance(InvitationPage.class));
-			CurrentPage.As(InvitationPage.class).openInvitationForm();
-//			CurrentPage.As(InvitationPage.class).generateInvitation(inv.getNroSocio(),inv.getNroCelular(), inv.getEmail(), inv.getEspecialidad(),
-//					inv.getDetalleConsulta(), inv.getNombre(), inv.getApellido(), inv.getFechaNacimiento(), inv.getIdServicio());
-//			CurrentPage.As(InvitationPage.class).cancelInvitation(inv.getNroSocio());
+			CurrentPage.As(HomePage.class).enterToProfileSection();
+			PageHelper.WaitForPageLoading();
+			CurrentPage.As(HomePage.class).enterToSections();
+			PageHelper.WaitForPageLoading();
+			CurrentPage.As(HomePage.class).enterToCollectionTypeHome();
+			PageHelper.WaitForPageLoading();
+			CurrentPage.As(HomePage.class).enterToCollectionTypeRegiones();
+			CurrentPage.As(HomePage.class).signOff();
+			PageHelper.WaitForPageLoading();
 			log.Log.SuccessStep(testName);
 		} catch (Exception ex) {
 			log.Log.info(ex.getMessage());
@@ -43,5 +45,8 @@ public class GenerateInvitationStep extends BaseStep {
 		log.Log.endTestCase(testName);	
 
 	}	
+		
+	
+	
 
 }

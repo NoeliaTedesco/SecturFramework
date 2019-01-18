@@ -2,10 +2,14 @@
 <objects>
     <asignado>Noelia</asignado>
     <estado>Pasa</estado>
-    <nombreDeLaPrueba>generateInvitation</nombreDeLaPrueba>
+    <nombreDeLaPrueba>TestPildoras</nombreDeLaPrueba>
     <pasos>
         <entry>
             <key>generateInvitation</key>
+            <value>Pasa</value>
+        </entry>
+        <entry>
+            <key>TestPildoras</key>
             <value>Pasa</value>
         </entry>
         <entry>
@@ -17,11 +21,11 @@
     <referencia>Referencia</referencia>
     <sprint>Sprint 11</sprint>
     <tiempoFinal>TiempoFinal</tiempoFinal>
-    <tiempoInicio>15469567874</tiempoInicio>
+    <tiempoInicio>15478206150</tiempoInicio>
     <tipoDePrueba>Regresion</tipoDePrueba>
     <usuario>
-        <email>cmotest1@cmo.com</email>
-        <password>cmotest1</password>
+        <password>tur2016</password>
+        <usser>admin</usser>
     </usuario>
     <version>1.0.0</version>
 </objects>

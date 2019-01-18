@@ -32,6 +32,7 @@ public class Colecciones {
 	@ExcelCell(value = 8)
 	public String cLongitud;
 
+	
 	public Colecciones() {
 
 	}

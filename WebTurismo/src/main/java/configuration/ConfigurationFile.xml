@@ -8,10 +8,10 @@
     <delivery>False</delivery>
     <imagePath>C:/screenshot</imagePath>
     <imageRepository>C:/imageRepository</imageRepository>
-    <log4jPath>C:/Users/ntedesco/Documents/Trabajo/FrameworkSectur/framework/src/log4j.xml</log4jPath>
-    <reportPath>C:/Users/ntedesco/Documents/Trabajo/FrameworkSectur/framework/src/main/java/report/JReportAdvancedConfiguration.xml</reportPath>
+    <log4jPath>C:/Users/ntedesco/git/SecturFramework/framework/src/log4j.xml</log4jPath>
+    <reportPath>C:/Users/ntedesco/git/SecturFramework/framework/src/main/java/report/JReportAdvancedConfiguration.xml</reportPath>
     <reportRepository>C:/Report/myReport.pdf</reportRepository>
-    <deliveryPath>C:/Users/ntedesco/Documents/Trabajo/FrameworkSectur/framework/src/main/java/delivery/emailSenderConfiguration.xml</deliveryPath>
+    <deliveryPath>C:/Users/ntedesco/git/SecturFramework/framework/src/main/java/delivery/emailSenderConfiguration.xml</deliveryPath>
     <pruebaRemota>NO</pruebaRemota>
     <urlDriver>http://192.168.99.100:4444/wd/hub</urlDriver>
 </configuration>

@@ -8,13 +8,13 @@ import static org.junit.Assert.assertEquals;
 
 public class LoginPage extends BasePage {
 
-	@FindBy(name = "user")
+	@FindBy(name = "username")
 	private WebElement campoUsuario;
 
 	@FindBy(name = "password")
 	private WebElement campoContrasena;
 	
-	@FindBy(css = "#main > div > div > div > div > div:nth-child(2) > div > div.panel-body > form > button")
+	@FindBy(name = "submit")
 	private WebElement botonIngresar;
 
 	public void loginUsser(String usser, String password) {
