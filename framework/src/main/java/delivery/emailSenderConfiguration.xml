@@ -9,4 +9,8 @@
 	<port>587</port>
 	<user>casillaprosam@gmail.com</user>
 	<password>Intranet001</password>
+<<<<<<< HEAD
 </emailSenderConfiguration>
+=======
+</emailSenderConfiguration>
+>>>>>>> branch 'master' of https://github.com/NoeliaTedesco/SecturFramework.git
